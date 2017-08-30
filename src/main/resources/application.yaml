@@ -1,0 +1,19 @@
+server:
+  port: 9999
+
+spring:
+  thymeleaf:
+    cache: false
+    encoding: 'UTF-8'
+    mode: 'HTML5'
+
+  datasource:
+    dialect: mysql
+    url: 'jdbc:mysql://127.0.0.1:3306/testdatabase'
+    username: 'root'
+    password: 'root'
+    driver-class-name: 'com.mysql.jdbc.Driver'
+
+  mybatis:
+    Mapper-location: 'classpath:/Mapper/*.xml'
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+
+<body>
+<form style="margin:0 auto" class="sui-form form-horizontal">
+<div style="background-color: darkkhaki " class="box">
+    <div class="center" style="background-color: slategray ">
+        <input type="hidden" id="userId" value="1"/>
+        <div class="control-group">
+            <label for="userName" class="control-label" >用户名：</label>
+            <div class="controls">
+                <input   type="text" id="userName" placeholder="userName"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="inputPassword" class="control-label" >密码:</label>
+            <div class="controls">
+                <input  type="password" id="inputPassword" placeholder="Password"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <label data-toggle="checkbox" class="checkbox-pretty inline">
+                    <input type="checkbox" name="remember-me"/><span>记住我</span>
+                </label>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button type="submit" class="sui-btn btn-primary login" style="color:green" >Sign in</button>
+                <button  class="sui-btn btn-primary register" style="color:red " ><a href="/toRegister" style="color:red ">To register</a></button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</form>
+</body>
+</html>
+

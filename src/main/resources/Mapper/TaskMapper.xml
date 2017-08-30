@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.cao.Mapper.TaskMapper">
+    <resultMap id = "result" type = "com.cao.bean.Task">
+        <result property = "id" column = "id" jdbcType="INTEGER"/>
+        <result property = "taskName"  column = "task_name" jdbcType="VARCHAR"/>
+        <result property = "taskDec"   column = "task_dec" jdbcType="VARCHAR"/>
+        <result property = "taskLimit" column = "task_limit" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id = "findTaskById" resultMap="result" parameterType="integer">
+        SELECT * FROM task where id = #{ids}
+    </select>
+
+    <select id = "queryAll" resultMap = "result">
+        SELECT * FROM task
+    </select>
+
+
+
+</mapper>
